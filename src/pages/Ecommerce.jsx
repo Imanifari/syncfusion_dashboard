@@ -75,6 +75,24 @@ const Ecommerce = () => {
                       23%
                     </span>
                   </p>
+                  <p className="text-gray-500 mt-1">Budget</p>
+                </div>
+                <div className="mt-8">
+                  <p>
+                    <span className="text-3xl font-semibold">48,348</span>
+                  </p>
+                  <p className="text-gray-500 mt-1">Expense</p>
+                </div>
+                <div className="mt-5">
+                  <SparkLine
+                    currentColor="blue"
+                    id="line-sparking"
+                    type="Line"
+                    height="80px"
+                    width="250px"
+                    data={SparklineAreaData}
+                    color="blue"
+                  ></SparkLine>
                 </div>
               </div>
             </div>
